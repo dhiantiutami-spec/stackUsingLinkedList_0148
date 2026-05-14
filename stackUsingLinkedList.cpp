@@ -25,6 +25,7 @@ public:
     {
         top = NULL;
     }
+
      int push(int value)
     {
         Node *newNode = new Node();
@@ -33,6 +34,14 @@ public:
         top = newNode;
         cout << "Push value: " << value << endl;
         return value;
-    
+    }
+    void pop()
+    {
+        if (isEmpty())
+        {
+            cout << "Stack is empty." << endl;
+        }
+
+        
     }
 };
